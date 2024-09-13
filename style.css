@@ -1,60 +1,129 @@
-*{
+@font-face {
+    font-family: minefont;
+    src: url(./fonts/NeueHaasDisplayBold.ttf);
+}
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
- 
-html,body{
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-/* .main{
-    height: 100%;
-
-} */
-
 /* PAGE - 1 */
 
-.page-1{
+.page-1 {
     height: 100vh;
     width: 100%;
     background: #EFEAE3;
     position: relative;
+    padding: 0 2vw;
 }
 
 
-/* NAV */
+/* NAVBAR */
 
-.nav{
+.nav {
     /* height: 100px; */
-    padding: 2vw 2vw;
+    padding: 2vw 0vw;
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
-.nav-part-2{
+.nav-part-2 {
     display: flex;
     align-items: center;
     /* justify-content: space-evenly; */
     gap: 1vw;
 }
 
-.nav-part-2 h4{
+.nav-part-2 h4 {
     padding: 0.7em 1.2em;
     border: 1px solid rgb(130, 108, 108);
     border-radius: 3.1em;
     cursor: pointer;
     font-weight: 600;
     font-size: 1.1em;
-    color: #000;
+    color: #000000c3;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-part-2 h4:hover{
-    background-color: black;
+.nav-part-2 h4 a {
+    text-decoration: none;
+    color: #000;
+    z-index: 9;
+    position: relative;
+}
+
+.nav-part-2 h4:hover a {
     color: #fff;
 }
 
+.nav-part-2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-part-2 h4:hover::after {
+    background-color: black;
+    color: #fff;
+    bottom: 0;
+    border-radius: 0;
+}
+
+
+/* PAGE - 1 CENTER */
+
+.center {
+    height: 75vh;
+    width: 100%;
+    background: orange;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: "minefont";
+    border-bottom: 1px solid #00003c;
+    padding-bottom: 2.5vw;
+}
+
+.left h3 {
+    width: 30vw;
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
+.right h1 {
+    font-size: 7vw;
+    white-space: none;
+    text-align: end;
+    line-height: 7vw;
+}
