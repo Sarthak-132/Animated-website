@@ -1,6 +1,6 @@
 @font-face {
     font-family: minefont;
-    src: url(./fonts/NeueHaasDisplayBold.ttf);
+    src: url(./fonts/NeueHaasDisplayMediu.ttf);
 }
 
 
@@ -26,16 +26,17 @@ html,
 body {
     width: 100%;
     height: 100%;
+    background: #EFEAE3;
 }
 
 /* PAGE - 1 */
 
 .page-1 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: #EFEAE3;
     position: relative;
-    padding: 0 2vw;
+    padding: 0 2.5vw;
 }
 
 
@@ -104,26 +105,109 @@ body {
 /* PAGE - 1 CENTER */
 
 .center {
-    height: 75vh;
+    height: 79vh;
     width: 100%;
-    background: orange;
+    /* background: orange; */
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     font-family: "minefont";
-    border-bottom: 1px solid #00003c;
-    padding-bottom: 2.5vw;
+    border-bottom: 1px solid #00003c47;
+    padding-bottom: 4vw;
 }
+
+
+/* PAGE - 1 LEFT */
 
 .left h3 {
-    width: 30vw;
+    width: 32vw;
     font-size: 2vw;
-    line-height: 2vw;
+    line-height: 2.4vw;
 }
 
+
+/* PAGE - 1 RIGHT */
+
 .right h1 {
-    font-size: 7vw;
+    font-size: 10vw;
     white-space: none;
     text-align: end;
-    line-height: 7vw;
+    line-height: 8.5vw;
 }
+
+
+/* ANIMATION */
+
+.hero-shape {
+    position: absolute;
+    height: 36vw;
+    width: 46vw;
+    background-color: #FE320A;
+    filter: blur(25px);
+    right: 0;
+    top: 79vh;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.hero-1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FE320A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(25px);
+}
+
+.hero-2{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE320A;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: animation-1;
+    animation-duration: 5s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.hero-3{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320A, #fe330ad1);
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: animation-1;
+    animation-duration: 5s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-1{
+    from{
+        transform: translate(-30 , 60%)
+    }
+    to{
+        transform: translate(40% , -30%)
+    }
+}    
+
+
+/* PAGE -2 */
+
+/* video */
+.video{
+    max-width: 100%;
+    border: none;
+    border-radius: 2.6em;
+    margin-top: 3.5em;
+    z-index: 99;
+}
+
+
+
