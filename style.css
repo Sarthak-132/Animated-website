@@ -222,7 +222,80 @@ body {
 
 /* PAGE-2 */
 
+.page-2{
+    min-height: 100vh;
+    width: 100%;
+    background: #EFEAE3;
+    padding: 8vw 0vw;
+}
+
+.cont-moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.cont-moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.cont-moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+}
+
+.inner-cont-moving-text{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: movingText;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
 .circle{
-    
+    height: 4.3em;
+    width: 4.3em;
+    border-radius: 50%;
+    /* color: #FE320A; */
+    background: #FE320A;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+
+/* moving animation */
+
+@keyframes movingText{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/* page - 2 bottom */
+
+.page-2-bottom{
+    height: 80vh;
+    width: 100%;
+    background: #bf2424;
+    padding: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-2-bottom h1{
+    font-size: 3.5vw;
+    width: 50%;
+}
+
+.page-2-bottom-part-2{
+    width: 20%;
+}
+
+.page-2-bottom-part-2 img{
+    width: 100%;
+    border-radius: 1.2em;
 }
