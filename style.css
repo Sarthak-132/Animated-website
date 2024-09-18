@@ -140,12 +140,12 @@ body {
 
 .hero-shape {
     position: absolute;
-    height: 36vw;
+    height: 33vw;
     width: 46vw;
     background-color: #FE320A;
     filter: blur(25px);
     right: 0;
-    top: 79vh;
+    top: 76vh;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
@@ -164,11 +164,11 @@ body {
     position: absolute;
     height: 30vw;
     width: 30vw;
-    background-color: #FE320A;
+    background-color: #fe470af7;
     border-radius: 50%;
     filter: blur(25px);
-    animation-name: animation-1;
-    animation-duration: 5s infinite;
+    animation-name: animation-2;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -178,22 +178,31 @@ body {
     position: absolute;
     height: 30vw;
     width: 30vw;
-    background: linear-gradient(#FE320A, #fe330ad1);
+    background: linear-gradient(#df390fe1, #ca4b14ff);
     border-radius: 50%;
     filter: blur(25px);
-    animation-name: animation-1;
-    animation-duration: 5s infinite;
+    animation-name: animation1;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-@keyframes animation-1{
+@keyframes animation1 {
     from{
-        transform: translate(-30 , 60%)
+        transform: translate(55%,-3%);
     }
     to{
-        transform: translate(40% , -30%)
+        transform: translate(0%,10%);
+    }
+}    
+
+@keyframes animation-2{
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-20%,20%);
     }
 }    
 
@@ -202,12 +211,18 @@ body {
 
 /* video */
 .video{
-    max-width: 100%;
+    position: relative;
+    width: 100%;
     border: none;
-    border-radius: 2.6em;
-    margin-top: 3.5em;
-    z-index: 99;
+    border-radius: 2.3em;
+    margin-top: 3.8em;
+    /* z-index: 99; */
 }
 
 
+/* PAGE-2 */
 
+
+.circle{
+    
+}
