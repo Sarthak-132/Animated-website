@@ -3,6 +3,18 @@
     src: url(./fonts/NeueHaasDisplayMediu.ttf);
 }
 
+@font-face {
+    font-family: minefont;
+    font-weight: 100;
+    src: url(./fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: minefont;
+    font-weight: 200;
+    src: url(./fonts/NeueHaasDisplayRoman.ttf);
+}
+
 
 * {
     margin: 0;
@@ -223,6 +235,7 @@ body {
 /* PAGE-2 */
 
 .page-2{
+    position: relative;
     min-height: 100vh;
     width: 100%;
     background: #EFEAE3;
@@ -279,16 +292,20 @@ body {
 .page-2-bottom{
     height: 80vh;
     width: 100%;
-    background: #bf2424;
-    padding: 4vw;
+    /* background: #bf2424; */
+    padding: 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 9;
 }
 
 .page-2-bottom h1{
-    font-size: 3.5vw;
-    width: 50%;
+    font-family: minefont;
+    font-size: 4vw;
+    width: 60%;
+    line-height: 4vw;
 }
 
 .page-2-bottom-part-2{
@@ -297,5 +314,33 @@ body {
 
 .page-2-bottom-part-2 img{
     width: 100%;
-    border-radius: 1.2em;
+    border-radius: 1em;
+}
+
+.page-2-bottom-part-2 p{
+    font-family: minefont;
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+
+
+/* anime behind text heading */
+
+.page-2 .anime-behind-text{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: #FE320A;
+    top: 55%;
+    left: 25%;
+    filter: blur(20px);
+}
+
+
+.page-3{
+    height: 100vh;
+    width: 100%;
+    background: #EFEAE3;
 }
