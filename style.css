@@ -157,7 +157,7 @@ body {
     background-color: #FE320A;
     filter: blur(25px);
     right: 0;
-    top: 76vh;
+    top: 79vh;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
@@ -328,19 +328,118 @@ body {
 /* anime behind text heading */
 
 .page-2 .anime-behind-text{
-    height: 30vw;
-    width: 30vw;
+    height: 33vw;
+    width: 33vw;
     position: absolute;
     border-radius: 50%;
-    background: #FE320A;
+    background: linear-gradient(to top right, #ff2b01 , #f06006f6);
     top: 55%;
     left: 25%;
     filter: blur(20px);
+    animation-name: anime-behind-text-1;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
+
+/* anime behind text keyframe */
+
+@keyframes anime-behind-text-1{
+    from{
+        transform: translate(10% , -10%) skew(0);
+    }
+    to{
+        transform: translate(-10% , 10%) skew(-12deg);
+    }
+}
+
+/* page - 3 */
 
 .page-3{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: #EFEAE3;
+    padding: 4vw 0vw;
 }
+
+/* page - 3 heading div */
+
+.featured-project{
+    padding-bottom: 3vw;
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
+    font-family: minefont;
+    font-weight: 2s 00;
+}
+
+/* page - 3 heading dot */
+
+.dot-featured-project{
+    height: 0.5vw;
+    width: 0.5vw;
+    background: #FE320A;
+    border-radius: 50%;
+    margin-right: 0.6vw;
+}
+
+/* hover effect class */
+
+.hover-effect{
+    height: 6.8vw;
+    width: 100%;
+    /* background: orange; */
+    border-bottom: 1px solid #00003c47;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+    font-family: minefont;
+}
+
+/* hover effect heading h2 */
+
+.hover-effect h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+/* hover effect of hovering */
+
+.hover-effect .overlay{
+    width: 100%;
+    height: 100%;
+    background: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+
+/* hover */
+
+.hover-effect:hover .overlay{
+    top: 0;
+}
+
+
+/* fixed image */
+
+#fixed-image{
+    height: 30vw;
+    width: 25vw;
+    position: fixed;
+    /* background: #000; */
+    left: 50%;
+    top: 22%;
+    border-radius: 0.6em;
+    z-index: 99;
+    display: none;
+    background-size: cover;
+    background-position:f center;
+}
+
