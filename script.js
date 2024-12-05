@@ -28,3 +28,5 @@ hover_Eff.forEach(function(image){
         fixed.style.backgroundImage = `url(${img})`;
     })
 })
+
+

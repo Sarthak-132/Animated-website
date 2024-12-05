@@ -440,6 +440,17 @@ body {
     z-index: 99;
     display: none;
     background-size: cover;
-    background-position:f center;
+    background-position: center;
 }
 
+.button-project{
+    padding : 4vw 3vw 6vw 3vw;
+}
+
+.button-project button{
+    padding: 1em 2em;
+    border: 1px solid rgb(65, 50, 50);
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
